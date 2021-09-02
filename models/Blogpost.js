@@ -11,30 +11,24 @@ Blogpost.init(
       primaryKey: true,
       autoIncrement: true,
     },
-    Title_of_post: {
+    title: {
       type: DataTypes.STRING,
       allowNull: false,
     },
-    Body_of_post: {
+    body: {
       type: DataTypes.STRING,
     },
-    Category: {
-      type: DataTypes.STRING,
+    //TODO: readd after MVP
+    // category: {
+    //   type: DataTypes.STRING,
+    //   allowNull: false,
+    //   defaultValue: DataTypes.NOW,
+    // },
+    date_created: {
+      type: DataTypes.DATE,
       allowNull: false,
       defaultValue: DataTypes.NOW,
     },
-    Creation_date: {
-      type: DataTypes.INTEGER,
-      allowNull: false,
-    },
-    // Author_id: {
-    //   type: DataTypes.INTEGER,
-    //   references: {
-    //     model: 'user',
-    //     key: 'id',
-    //   },
-    // },  <----Think about how to set up
-
     user_id: {
         type: DataTypes.INTEGER,
         references: {
