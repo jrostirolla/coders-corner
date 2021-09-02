@@ -1,9 +1,10 @@
 const router = require('express').Router();
 const { Blogpost } = require('../../models');
 
+
 router.post('/', async (req, res) => {
   try {
-    const newProject = await Blogpost.create({
+    const newBlogpost = await Blogpost.create({
       ...req.body,
       user_id: req.session.user_id,
     });
@@ -16,19 +17,19 @@ router.post('/', async (req, res) => {
 
 router.delete('/:id', async (req, res) => {
   try {
-    const projectData = await Blogpost.destroy({
+    const BlogpostData = await Blogpost.destroy({
       where: {
         id: req.params.id,
         user_id: req.session.user_id,
       },
     });
 
-    if (!projectData) {
-      res.status(404).json({ message: 'No project found with this id!' });
+    if (!BlogpostData) {
+      res.status(404).json({ message: 'No Blog post found with this id!' });
       return;
     }
 
-    res.status(200).json(projectData);
+    res.status(200).json(BlogpostData);
   } catch (err) {
     res.status(500).json(err);
   }
