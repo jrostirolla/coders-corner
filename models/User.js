@@ -44,13 +44,7 @@ User.init(
     coding_language: {
       type: DataTypes.STRING,
       allowNull: false
-    },
-
-    //TODO: restructure this to relate to the subscription feature once integrated
-    // subscibed_channels: {
-    //   type: DataTypes.STRING,
-    //   allowNull: false
-    // },
+    }  
   },
 
 
