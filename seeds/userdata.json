@@ -1,0 +1,28 @@
+[
+    {
+        "email": "tester@hotmail.com",
+        "password": "test1234",
+        "name": "James Rostirolla",
+        "city": "Sutherland",
+        "coding_language": "Javascript"
+    },     {
+        "email": "tester2@hotmail.com",
+        "password": "test1234",
+        "name": "Ahrum Noh",
+        "city": "Leppington",
+        "coding_language": "CSS"
+    },     {
+        "email": "tester3@hotmail.com",
+        "password": "test1234",
+        "name": "William O'Brian",
+        "city": "Cronulla",
+        "coding_language": "HTML"
+    },     {
+        "email": "tester4@hotmail.com",
+        "password": "test1234",
+        "name": "Buttface Mecgee",
+        "city": "The Moon",
+        "coding_language": "Halo 5"
+    }
+  ]
+  

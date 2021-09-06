@@ -1,2 +1,2 @@
-DROP DATABASE IF EXISTS codeinterface_db;
-CREATE DATABASE codeinterface_db;
+DROP DATABASE IF EXISTS codingcorner_db;
+CREATE DATABASE codingcorner_db;

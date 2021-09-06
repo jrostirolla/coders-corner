@@ -11,7 +11,7 @@ class User extends Model {
 User.init(
   {
     id: {
-      type: DataTypes.INTERGER,
+      type: DataTypes.INTEGER,
       allowNull: false,
       primaryKey: true,
       autoIncrement: true
@@ -23,22 +23,17 @@ User.init(
     },
 
     password: {
-      type:DataTypes.INTERGER,
+      type:DataTypes.STRING,
       allowNullL: false,
       validate: {
         len: [8],
       }
     },
 
-    first_name: {
+    name: {
       type: DataTypes.STRING,
       allowNull: false
 
-    },
-
-    last_name: {
-      type: DataTypes.STRING,
-      allowNull: false
     },
 
     city: {
@@ -46,15 +41,10 @@ User.init(
       allowNull: false
     },
 
-    Favourite_coding_language: {
+    coding_language: {
       type: DataTypes.STRING,
       allowNull: false
-    },
-
-    Subscibed_channels: {
-      type: DataTypes.STRING,
-      allowNull: false
-    },
+    }  
   },
 
 
