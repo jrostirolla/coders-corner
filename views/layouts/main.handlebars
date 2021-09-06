@@ -1,27 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tech Blog</title>
-  <link rel="stylesheet" href="../../public/css/jass.css">
-  <link rel="stylesheet" href="../../public/css/style.css">
-</head>
+    <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Coder's Corner</title>
+      <!-- Materialize framework -->
+      <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+      />
+      <link 
+      rel="stylesheet"
+      href="./css/style.css"
+      />
+    </head>
 
 <body>
   <div class="flex-column justify-space-around">
     <header class="display-flex justify-space-between align-center p-2">
       <h1>
-        <a href="/">Tech Blog</a>
+        <a href="/">Coders Corner</a>
       </h1>
       <nav>
         <!-- Conditionally render login or logout links -->
         {{#if logged_in}}
-        <a href="/profile">profile</a> |
-        <button class="no-button" id="logout">logout</button>
+        <a href="/profile">Profile</a> |
+        <button class="no-button" id="logout">Logout</button>
         {{else}}
-        <a href="/login">login</a>
+        <a href="/login">Login</a>
         {{/if}}
       </nav>
     </header>
@@ -29,8 +36,16 @@
       <!-- Render the sub layout -->
       {{{ body }}}
     </main>
-    <footer>
-      
+    <footer class="page-footer">
+            <div class="row">
+                <div class="column s12">
+                    <ul id="verybottom">
+                        <li><a  href="https://github.com/jrostirolla">James</a></li>
+                        <li><a href="https://github.com/ahrumnoh">Ahrum</a></li>
+                        <li><a href="https://github.com/Wgobrie1">William</a></li>
+                    </ul>
+                </div>
+            </div>
     </footer>
   </div>
 
