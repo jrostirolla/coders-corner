@@ -25,10 +25,10 @@
       <nav>
         <!-- Conditionally render login or logout links -->
         {{#if logged_in}}
-        <a href="/profile">profile</a> |
-        <button class="no-button" id="logout">logout</button>
+        <a href="/profile">Profile</a> |
+        <button class="no-button" id="logout">Logout</button>
         {{else}}
-        <a href="/login">login</a>
+        <a href="/login">Login</a>
         {{/if}}
       </nav>
     </header>
@@ -36,8 +36,16 @@
       <!-- Render the sub layout -->
       {{{ body }}}
     </main>
-    <footer>
-      
+    <footer class="page-footer">
+            <div class="row">
+                <div class="column s12">
+                    <ul id="verybottom">
+                        <li><a  href="https://github.com/jrostirolla">James</a></li>
+                        <li><a href="https://github.com/ahrumnoh">Ahrum</a></li>
+                        <li><a href="https://github.com/Wgobrie1">William</a></li>
+                    </ul>
+                </div>
+            </div>
     </footer>
   </div>
 

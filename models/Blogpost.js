@@ -19,7 +19,7 @@ Blogpost.init(
     body: {
       type: DataTypes.STRING,
     },
-    //TODO: readd after MVP
+    //TODO: read after MVP
     // category: {
     //   type: DataTypes.STRING,
     //   allowNull: false,
