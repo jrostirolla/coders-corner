@@ -1,0 +1,27 @@
+{{> post-info post}}
+
+{{#if loggedIn}}
+
+<!--<form class="comment-form">-->
+<form class = "comment-form" id="comment-form">
+
+    <div>
+        <input name="comment-body"></input>        
+    </div>
+
+    <div>
+        <button type="submit">Add Comment</button>
+    </div>
+
+</form>
+
+{{/if}}
+
+{{> comments post.comments}}
+
+
+{{#if loggedIn}}
+<script src="/javascipt/comment.js"></script>
+{{/if}}
+
+    
