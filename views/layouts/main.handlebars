@@ -14,21 +14,28 @@
       rel="stylesheet"
       href="./css/style.css"
       />
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
     </head>
 
 <body>
   <div class="flex-column justify-space-around">
     <header class="display-flex justify-space-between align-center p-2">
-      <h1>
+      <h1 class="page-title">
         <a href="/">Coders Corner</a>
       </h1>
       <nav>
         <!-- Conditionally render login or logout links -->
         {{#if logged_in}}
-        <a href="/profile">Profile</a> |
-        <button class="no-button" id="logout">Logout</button>
+        <div class="login-c">
+          <a href="/profile">Profile</a> |
+          <button class="no-button" id="logout">Logout</button>
+       </div>
         {{else}}
-        <a href="/login">Login</a>
+        <div class="login-c">
+          <a href="/login">Login</a>
+        </div>
         {{/if}}
       </nav>
     </header>
@@ -36,17 +43,19 @@
       <!-- Render the sub layout -->
       {{{ body }}}
     </main>
-    <footer class="page-footer">
+    <div class="page-footer">
+      <footer>
             <div class="row">
                 <div class="column s12">
-                    <ul id="verybottom">
-                        <li><a  href="https://github.com/jrostirolla">James</a></li>
+                    <ul class="center-align">
+                        <li><a href="https://github.com/jrostirolla">James</a></li>
                         <li><a href="https://github.com/ahrumnoh">Ahrum</a></li>
                         <li><a href="https://github.com/Wgobrie1">William</a></li>
                     </ul>
                 </div>
             </div>
-    </footer>
+      </footer>
+    </div>
   </div>
 
   <!-- Render script for logged in users only -->
