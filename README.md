@@ -29,7 +29,7 @@ Given I am using the 'Coders-Corner' to get involved in IT
 
 ## Screenshot and link to project 
 Check out our project [HERE](https://rocky-waters-07202.herokuapp.com/).
-![Screenshot for our project](https://github.com/jrostirolla/coder-corner/blob/main/Untitleds.jpg?raw=true)
+![Screenshot for our project](https://github.com/jrostirolla/coders-corner/blob/main/Untitled.png)
 
 ## Technology used
 * Handlebars
